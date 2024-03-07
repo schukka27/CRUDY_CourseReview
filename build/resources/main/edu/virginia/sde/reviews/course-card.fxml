@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="originalBox" alignment="CENTER_RIGHT" fillWidth="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="530.0" style="-fx-border-color: #000000; -fx-border-width: 0.5px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.CourseCardController">
+   <children>
+      <HBox fx:id="courseComponent" maxWidth="604.0" minWidth="518.0" prefHeight="33.0" prefWidth="518.0" spacing="2.0">
+         <children>
+            <Label fx:id="mnemonic" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" text="Mnemonic" textAlignment="CENTER">
+               <font>
+                  <Font name="Avenir Light" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="number" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" text="Number">
+               <font>
+                  <Font name="Avenir Light" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="title" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" text="Title">
+               <font>
+                  <Font name="Avenir Light" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleGoToReviewAction" prefHeight="30.0" prefWidth="128.0" text="Reviews" textAlignment="RIGHT" textFill="BLUE" underline="true">
+               <font>
+                  <Font name="Avenir Light" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="324.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="213.0" text="Average Course Rating: ">
+               <font>
+                  <Font name="Avenir Light" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="avgRating" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="61.0" text="#">
+               <font>
+                  <Font name="Avenir Light" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

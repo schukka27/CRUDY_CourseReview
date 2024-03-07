@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="reviewCard" alignment="TOP_CENTER" fillWidth="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="131.0" prefWidth="534.0" style="-fx-border-color: #000000; -fx-border-width: 1px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.CourseReviewCardController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="34.0" prefWidth="534.0">
+         <children>
+            <HBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="267.0" style="-fx-background-color: eb8034;">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="54.0" text="Rating:" textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Light" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ratingText" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="28.0" text="4.0" textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Light" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="timeStamp" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="267.0" style="-fx-background-color: #77b4f2;" text="January 17, 2020 00:00:00 GMT" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Heavy Oblique" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane prefHeight="105.0" prefWidth="534.0">
+         <children>
+            <Label fx:id="commentText" alignment="TOP_LEFT" layoutX="20.0" layoutY="20.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="503.0" text="N/A" wrapText="true">
+               <font>
+                  <Font name="Avenir Light Oblique" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Comment" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="-4.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="80.0" text="Comment: ">
+               <font>
+                  <Font name="Avenir Light" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>
